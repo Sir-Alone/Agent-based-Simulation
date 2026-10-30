@@ -11,7 +11,6 @@ public class PolynomialRegression {
     double b2;
     double r2;
 
-    // Constructor que recibe los datos desde DataSet
     public PolynomialRegression(double[] xData, double[] yData) {
         this.x = xData;
         this.y = yData;
@@ -96,8 +95,6 @@ public class PolynomialRegression {
         }
         r2 = 1.0 - (sr / st);
     }
-
-    // Getters para coincidir con la lámina
     public double getBeta0() { return b0; }
     public double getBeta1() { return b1; }
     public double getBeta2() { return b2; }
